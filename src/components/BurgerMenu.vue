@@ -30,6 +30,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .menu-button{
+        cursor: pointer;
+
+        &:hover{
+            background-color:tomato;
+        }
+    }
+
     img{
         width: 100%;
     }

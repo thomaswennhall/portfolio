@@ -28,9 +28,5 @@ export default {
         background-color: rgb(60, 179, 99);
         display: flex;
         flex-direction: column;
-
-        .heading{
-            grid-column: span 2;
-        }
     }
 </style>

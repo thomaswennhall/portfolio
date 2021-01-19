@@ -8,12 +8,15 @@
 
 <script>
 export default {
-    props: { project: Object}
+    props: { project: Object }
 }
 </script>
 
 <style lang="scss" scoped>
     .project-card{
+        display: flex;
+        flex-direction: column;
+
         padding-top: 1rem;
 
         h2{
@@ -25,12 +28,18 @@ export default {
         }
 
         a{
-            text-decoration: none;
+            text-align: center;
             font-size: 1rem;
-            color: black;
+            border: 0.16rem solid black;
+            border-radius: 0.2rem;
+            padding: 0.2rem;
+            margin-top: 0.4rem;
+            max-width: 54%;
+
+            background-color: #fed05a;
 
             &:hover{
-                color: #fed05a;
+                background-color: rgb(60, 179, 99);
             }
         }
     }

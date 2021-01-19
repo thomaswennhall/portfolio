@@ -2,7 +2,7 @@
     <nav class="drop-down-menu">
         <a href="#about">WHO I AM</a>
         <a href="#projects-view">WHAT I DO</a>
-        <a href="#">HOW TO FIND ME</a>
+        <a href="#contact">HOW TO FIND ME</a>
     </nav>
 </template>
 
@@ -17,20 +17,25 @@ export default {
         flex-direction: column;
 
         a{
-            text-decoration: none;
             text-align: end;
             font-size: 1.2rem;
             line-height: 4rem;
-            color: black;
 
             &:hover{
                 color: pink;
             }
-        }
-        a:nth-of-type(2){
-            &:hover{
-                color:rgb(60, 179, 99);
+
+            &:nth-of-type(2){
+                &:hover{
+                    color:rgb(60, 179, 99);
+                }
             }
+            &:nth-of-type(3){
+                &:hover{
+                    color:tomato;
+                }
+            }
+
         }
     }
 </style>

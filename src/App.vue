@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <Home class="view home-view" />
-    <About class="view about-view" />
-    <Projects class="view projects-view" />
+    <Home class="view view--home" />
+    <About class="view view--about" />
+    <Projects class="view view--projects" />
+    <Contact class="view view--contact" />
   </div>
 </template>
 
@@ -10,9 +11,10 @@
 import About from "@/views/About.vue";
 import Home from "@/views/Home.vue";
 import Projects from "@/views/Projects.vue";
+import Contact from "@/views/Contact.vue";
 
 export default {
-  components: { About, Home, Projects },
+  components: { About, Home, Projects, Contact },
 };
 </script>
 
@@ -43,6 +45,10 @@ p {
 h1{
   font-size: 2rem;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 
 button {
   outline: none;
@@ -57,5 +63,9 @@ button {
 
   min-height: 100vh;
   padding: 2rem;
+
+  &--contact{
+    max-height: 100vh;
+  }
 }
 </style>
