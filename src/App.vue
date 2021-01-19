@@ -1,31 +1,53 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-    </div>
-    <router-view/>
+    <Home class="view home-view" />
+    <About class="view about-view" />
+    <Projects class="view projects-view" />
   </div>
 </template>
 
+<script>
+import About from "@/views/About.vue";
+import Home from "@/views/Home.vue";
+import Projects from "@/views/Projects.vue";
+
+export default {
+  components: { About, Home, Projects },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-#nav {
-  padding: 30px;
+h1,
+a,
+p {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.view {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+  min-height: 100vh;
+  padding: 2rem;
 }
 </style>
