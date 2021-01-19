@@ -1,0 +1,16 @@
+{ "projects": [
+    {
+        "id": 1,
+        "title": "e-wallet",
+        "description": "A project built with Vue.js. Using nested components and so on...",
+        "img": "@/assets/images/e-wallet.png",
+        "url": "https://thomaswennhall.github.io/iths-e-wallet/"
+    },
+    {
+        "id": 2,
+        "title": "mini-library",
+        "description": "My first project built with Vue.js. I created reusable components with a friend",
+        "img": "@/assets/images/e-wallet.png",
+        "url": "https://thomaswennhall.github.io/iths-e-wallet/"
+    }
+]}

@@ -35,7 +35,7 @@ export default {
     background-color: pink;
 
     .heading{
-      grid-column: span 2;
+      grid-column: span 3;
     }
 
     p{

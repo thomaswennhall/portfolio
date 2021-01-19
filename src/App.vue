@@ -19,6 +19,10 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
+/* COLOURS */
+$base-yellow: #fed05a;
+/* COLOURS */
+
 * {
   padding: 0;
   margin: 0;
@@ -29,11 +33,15 @@ html {
 }
 
 h1,
+h2,
 a,
 p {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+}
+h1{
+  font-size: 2rem;
 }
 
 button {

@@ -1,7 +1,7 @@
 <template>
     <nav class="drop-down-menu">
         <a href="#about">WHO I AM</a>
-        <a href="#projects">WHAT I DO</a>
+        <a href="#projects-view">WHAT I DO</a>
         <a href="#">HOW TO FIND ME</a>
     </nav>
 </template>
@@ -25,6 +25,11 @@ export default {
 
             &:hover{
                 color: pink;
+            }
+        }
+        a:nth-of-type(2){
+            &:hover{
+                color:rgb(60, 179, 99);
             }
         }
     }
