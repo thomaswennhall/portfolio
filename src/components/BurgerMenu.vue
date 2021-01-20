@@ -1,28 +1,30 @@
 <template>
-        <button @click="changeImg" class="menu-button">
-            <img :src="menuImg" alt="menu icon">
-        </button>
+    <button @click="toggleDropDown" class="menu-button">
+        <MenuBurger v-if="burger" class="menu-icon"/>
+        <MenuCross v-else />
+    </button>
 </template>
 
 <script>
+import MenuBurger from '@/components/svg-icons/MenuBurger.vue'
+import MenuCross from '@/components/svg-icons/MenuCross.vue'
+
 export default {
+    components: { MenuBurger, MenuCross },
     data(){ return {
-        menuImg: require("@/assets/Menu.svg")
+        burger: true
     }},
     
     methods: {
-    showNav(){
-        if(this.isActive === false){
-            this.isActive = true
+    switchIcon(){
+        if(this.burger === false){
+            this.burger = true
+        } else{
+            this.burger = false
         }
     },
-    changeImg(){
-        this.showNav()
-        if(this.menuImg === require("@/assets/Menu.svg")){
-            this.menuImg = require("@/assets/cross_thin.svg")
-        } else {
-            this.menuImg = require("@/assets/Menu.svg")
-        }
+    toggleDropDown(){
+        this.switchIcon()
         this.$emit("menu-clicked")
     }
   }
@@ -32,13 +34,6 @@ export default {
 <style lang="scss" scoped>
     .menu-button{
         cursor: pointer;
-
-        &:hover{
-            background-color:tomato;
-        }
     }
 
-    img{
-        width: 100%;
-    }
 </style>
