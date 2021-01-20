@@ -49,6 +49,9 @@ a{
   text-decoration: none;
   color: black;
 }
+p{
+  line-height: 1.4rem;
+}
 
 button {
   outline: none;
@@ -63,6 +66,10 @@ button {
 
   min-height: 100vh;
   padding: 2rem;
+
+  &--home{
+    background-color: $base-yellow;
+  }
 
   &--contact{
     max-height: 100vh;

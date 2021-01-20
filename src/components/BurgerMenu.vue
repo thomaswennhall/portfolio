@@ -34,6 +34,10 @@ export default {
 <style lang="scss" scoped>
     .menu-button{
         cursor: pointer;
+        transition: 0.2s;
+        &:active{
+            transform: scale(0.7);
+        }
     }
 
 </style>

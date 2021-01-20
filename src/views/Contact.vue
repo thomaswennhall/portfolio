@@ -1,30 +1,23 @@
 <template>
   <section id="contact">
     <h1 class="heading">How to find me</h1>
-    <a class="link-github" href="https://github.com/thomaswennhall">
-      <img
-        class="icon icon-github"
-        src="@/assets/github.svg"
-        alt="GitHub Icon"
-      />
+    <a 
+      class="link-github" 
+      href="https://github.com/thomaswennhall"
+      target="_blank"
+    >
+      <GithubIcon />
     </a>
 
     <a
       class="link-linkedin"
       href="https://www.linkedin.com/in/thomasbentleywennhall"
+      target="_blank"
     >
-      <img
-        class="icon icon-linkedin"
-        src="@/assets/linkedin_round.svg"
-        alt="LinkedIn Icon"
-      />
+      <LinkedinIcon />
     </a>
     <a class="link-mail" href="mailto:wennhall@gmail.com">
-      <img
-        class="icon icon-mail"
-        src="@/assets/mail_round.svg"
-        alt="E-mail Icon"
-      />
+      <MailIcon />
     </a>
     <p>
       Thanks for scrolling all the way through to the end of my portfolio. 
@@ -39,7 +32,13 @@
 </template>
 
 <script>
-export default {};
+import GithubIcon from '@/components/svg-icons/GithubIcon.vue'
+import LinkedinIcon from '@/components/svg-icons/LinkedinIcon.vue'
+import MailIcon from '@/components/svg-icons/MailIcon.vue'
+
+export default {
+  components: { GithubIcon, LinkedinIcon, MailIcon }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -67,6 +66,10 @@ export default {};
     &-mail {
       grid-column: 4;
       grid-row: 4;
+    }
+
+    &:active{
+      transform: scale(0.7);
     }
   }
 

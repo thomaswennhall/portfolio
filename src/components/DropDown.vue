@@ -35,7 +35,6 @@ export default {
                     color:tomato;
                 }
             }
-
         }
     }
 </style>

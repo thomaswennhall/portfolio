@@ -48,10 +48,6 @@ export default {
 
 <style lang="scss" scoped>
 
-.home {
-  background-color: #fed05a;
-}
-
 .name {
   grid-column: span 3;
   grid-row: 5 / span 3;

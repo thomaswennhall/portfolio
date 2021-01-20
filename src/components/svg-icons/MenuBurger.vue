@@ -1,8 +1,7 @@
 <template>
-  <div class="menu-icon">
     <svg
-        width="36"
-        height="24"
+        width="45"
+        height="30"
         viewBox="0 0 36 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +14,6 @@
         
         />
     </svg>
-  </div>
 </template>
 
 <script>
