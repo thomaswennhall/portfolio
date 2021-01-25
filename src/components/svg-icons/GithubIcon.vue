@@ -17,7 +17,7 @@
         fill: black;
 
         &:hover{
-            fill: rgb(60, 179, 99);
+            fill: $primary-green;
         }
         &:active{
             fill:black;

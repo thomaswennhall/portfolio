@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
     #projects-view{
-        background-color: rgb(60, 179, 99);
+        background-color: $primary-green;
         display: flex;
         flex-direction: column;
     }

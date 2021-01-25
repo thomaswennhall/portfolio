@@ -8,7 +8,6 @@
     >
       <GithubIcon />
     </a>
-
     <a
       class="link-linkedin"
       href="https://www.linkedin.com/in/thomasbentleywennhall"
@@ -43,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 #contact {
-  background-color: tomato;
+  background-color: $primary-red;
 
   .heading {
     grid-column: span 5;

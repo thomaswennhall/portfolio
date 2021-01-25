@@ -36,10 +36,10 @@ export default {
             margin-top: 0.4rem;
             max-width: 54%;
 
-            background-color: #fed05a;
+            background-color: $primary-yellow;
 
             &:hover{
-                background-color: rgb(60, 179, 99);
+                background-color: transparent;
             }
         }
     }

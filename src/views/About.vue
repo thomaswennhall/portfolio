@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
   #about{
-    background-color: pink;
+    background-color: $primary-pink;
 
     display: flex;
     flex-direction: column;

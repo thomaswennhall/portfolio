@@ -17,7 +17,7 @@
         fill: black;
 
         &:hover {
-            fill: #fed05a;
+            fill: $primary-yellow;
         }
         &:active{
             fill:black;

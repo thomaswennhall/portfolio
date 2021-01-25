@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section id="home">
     <h1 :style="scaleText" class="name">Thomas Bentley Wennhall</h1>
     <BurgerMenu v-on:menu-clicked="menuClicked" class="menu-icon" />
     <DropDown class="drop-down" :class="{ active: isActive }" />
@@ -47,6 +47,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#home{
+ background-color: $primary-yellow;
+}
 
 .name {
   grid-column: span 3;

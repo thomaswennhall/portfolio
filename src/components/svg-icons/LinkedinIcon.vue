@@ -17,7 +17,7 @@
         fill: black;
 
         &:hover {
-            fill: pink;
+            fill: $primary-pink;
         }
         &:active{
             fill:black;

@@ -21,10 +21,6 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
-/* COLOURS */
-$base-yellow: #fed05a;
-/* COLOURS */
-
 * {
   padding: 0;
   margin: 0;
@@ -66,10 +62,6 @@ button {
 
   min-height: 100vh;
   padding: 2rem;
-
-  &--home{
-    background-color: $base-yellow;
-  }
 
   &--contact{
     max-height: 100vh;

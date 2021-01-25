@@ -14,10 +14,10 @@
 
 <style lang="scss" scoped>
     svg{
-    fill:black;
+    fill: black;
 
     &:hover{
-        fill:indianred;
+        fill: $primary-red;
     }
 }
 </style>

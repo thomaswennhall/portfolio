@@ -22,17 +22,17 @@ export default {
             line-height: 4rem;
 
             &:hover{
-                color: pink;
+                color: $primary-pink;
             }
 
             &:nth-of-type(2){
                 &:hover{
-                    color:rgb(60, 179, 99);
+                    color: $primary-green;
                 }
             }
             &:nth-of-type(3){
                 &:hover{
-                    color:tomato;
+                    color: $primary-red;
                 }
             }
         }
