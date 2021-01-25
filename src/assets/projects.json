@@ -2,15 +2,56 @@
     {
         "id": 1,
         "title": "e-wallet",
-        "description": "A project built with Vue.js. Using nested components and so on...",
+        "description": "A school project built with Vue.js. It is a virtual wallet where you can add, delete and browse though your credit cards.",
         "img": "@/assets/images/e-wallet.png",
-        "url": "https://thomaswennhall.github.io/iths-e-wallet/"
+        "url": { 
+            "web": "https://thomaswennhall.github.io/iths-e-wallet/", 
+            "code": "https://github.com/thomaswennhall/iths-e-wallet"
+        }
+
     },
     {
         "id": 2,
-        "title": "mini-library",
-        "description": "My first project built with Vue.js. I created reusable components with a friend",
+        "title": "e-wallet",
+        "description": "A school project built with Vue.js. It is a virtual wallet where you can add, delete and browse though your credit cards.",
         "img": "@/assets/images/e-wallet.png",
-        "url": "https://thomaswennhall.github.io/iths-e-wallet/"
+        "url": { 
+            "web": "https://thomaswennhall.github.io/iths-e-wallet/", 
+            "code": "https://github.com/thomaswennhall/iths-e-wallet"
+        }
+
+    },
+    {
+        "id": 3,
+        "title": "e-wallet",
+        "description": "A school project built with Vue.js. It is a virtual wallet where you can add, delete and browse though your credit cards.",
+        "img": "@/assets/images/e-wallet.png",
+        "url": { 
+            "web": "https://thomaswennhall.github.io/iths-e-wallet/", 
+            "code": "https://github.com/thomaswennhall/iths-e-wallet"
+        }
+
+    },
+    {
+        "id": 4,
+        "title": "e-wallet",
+        "description": "A school project built with Vue.js. It is a virtual wallet where you can add, delete and browse though your credit cards.",
+        "img": "@/assets/images/e-wallet.png",
+        "url": { 
+            "web": "https://thomaswennhall.github.io/iths-e-wallet/", 
+            "code": "https://github.com/thomaswennhall/iths-e-wallet"
+        }
+
+    },
+    {
+        "id": 5,
+        "title": "e-wallet",
+        "description": "A school project built with Vue.js. It is a virtual wallet where you can add, delete and browse though your credit cards.",
+        "img": "@/assets/images/e-wallet.png",
+        "url": { 
+            "web": "https://thomaswennhall.github.io/iths-e-wallet/", 
+            "code": "https://github.com/thomaswennhall/iths-e-wallet"
+        }
+
     }
 ]}

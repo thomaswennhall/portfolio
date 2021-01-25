@@ -1,8 +1,11 @@
 <template>
   <article class="project-card">
-      <h2>{{ project.title }}</h2>
+      <h2>{{ project.title }} {{ project.id }}</h2>
       <p>{{ project.description }}</p>
-      <a :href="project.url" target="_blank">Visit website</a>
+      <div class="links">
+        <a :href="project.url.web" target="_blank">Visit website</a>
+        <a :href="project.url.code" target="_blank">Check code</a>
+      </div>
   </article>
 </template>
 
@@ -17,7 +20,7 @@ export default {
         display: flex;
         flex-direction: column;
 
-        padding-top: 1rem;
+        margin-top: 1.6rem;
 
         h2{
             font-size: 1.6rem;
@@ -27,20 +30,32 @@ export default {
             font-size: 1rem;
         }
 
-        a{
-            text-align: center;
-            font-size: 1rem;
-            border: 0.16rem solid black;
-            border-radius: 0.2rem;
-            padding: 0.2rem;
-            margin-top: 0.4rem;
-            max-width: 54%;
+        .links{
+            display: flex;
+            justify-content: start;
+            
+            width: 100%;
+            margin-top: 0.6rem;
+            
+            a{
+                text-align: center;
+                font-size: 1rem;
+                border: 0.16rem solid black;
+                border-radius: 0.2rem;
+                
+                margin-right: 1.4rem;
+                padding: 0.2rem;
+                max-width: 50%;
 
-            background-color: $primary-yellow;
-
-            &:hover{
-                background-color: transparent;
+                background-color: $primary-pink;
+                &:first-of-type{
+                    background-color: $primary-yellow;
+                }
+                &:hover{
+                    background-color: transparent;
+                }
             }
         }
+
     }
 </style>

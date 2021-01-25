@@ -33,7 +33,8 @@ html{
 h1,
 h2,
 a,
-p {
+p,
+button {
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -63,7 +64,7 @@ button{
   min-height: 100vh;
   padding: 2rem;
 
-  &--contact{
+  &--home, &--contact{
     max-height: 100vh;
   }
 }
