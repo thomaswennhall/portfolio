@@ -21,12 +21,12 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html {
+html{
   scroll-behavior: smooth;
 }
 
@@ -49,13 +49,13 @@ p{
   line-height: 1.4rem;
 }
 
-button {
+button{
   outline: none;
   background-color: transparent;
   border: none;
 }
 
-.view {
+.view{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(12, 1fr);
