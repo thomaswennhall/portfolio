@@ -33,18 +33,18 @@ export default {
         .links{
             display: flex;
             justify-content: start;
-            
             width: 100%;
             margin-top: 0.6rem;
             
             a{
-                text-align: center;
+                display: grid;
+                place-items: center;
+                
                 font-size: 1rem;
                 border: 0.16rem solid black;
                 border-radius: 0.2rem;
                 
-                margin-right: 1.4rem;
-                padding: 0.2rem;
+                margin-right: 5%;
                 max-width: 50%;
 
                 background-color: $primary-pink;
