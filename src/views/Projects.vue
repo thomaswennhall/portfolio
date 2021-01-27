@@ -1,5 +1,5 @@
 <template>
-  <section id="projects-view">
+  <section id="projects">
     <div>
       <h1 class="heading">What I do</h1>
       <p class="projects-text">
@@ -21,7 +21,7 @@
         :project="project"
       />
     </div>
-    <button class="show-all" @click="showAll">{{showAllText}}</button>
+    <button v-if="projectsArr.length > 3" class="show-all" @click="showAll">{{showAllText}}</button>
   </section>
 </template>
 
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#projects-view {
+#projects {
   background-color: $primary-green;
   display: flex;
   flex-direction: column;

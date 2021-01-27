@@ -33,6 +33,10 @@ export default {
 
 <style lang="scss" scoped>
     .menu-button{
+        @media screen and (min-width: 650px) {
+            display: none;
+        }
+
         cursor: pointer;
         transition: 0.2s;
         &:active{

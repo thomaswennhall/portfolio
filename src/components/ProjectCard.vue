@@ -3,8 +3,8 @@
       <h2>{{ project.title }} {{ project.id }}</h2>
       <p>{{ project.description }}</p>
       <div class="links">
-        <a :href="project.url.web" target="_blank">Visit website</a>
-        <a :href="project.url.code" target="_blank">Check code</a>
+        <a :href="project.url.web" target="_blank">visit website</a>
+        <a :href="project.url.code" target="_blank">view code</a>
       </div>
   </article>
 </template>
@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
     .project-card{
         display: flex;
         flex-direction: column;
@@ -34,24 +35,23 @@ export default {
             display: flex;
             justify-content: start;
             width: 100%;
-            margin-top: 0.6rem;
+            margin: 0.6rem 0;
             
             a{
-                display: grid;
-                place-items: center;
-                
+                letter-spacing: 0.2rem;
                 font-size: 1rem;
-                border: 0.16rem solid black;
-                border-radius: 0.2rem;
+                padding: 0.2rem 0.6rem;
                 
-                margin-right: 5%;
-                max-width: 50%;
-
+                border: 0.16rem solid black;
+                border-radius: 0.3rem;
+            
                 background-color: $primary-pink;
+                
                 &:first-of-type{
                     background-color: $primary-yellow;
+                    margin-right: 5%;
                 }
-                &:hover{
+                &:active{
                     background-color: transparent;
                 }
             }

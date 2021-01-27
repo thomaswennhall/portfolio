@@ -1,7 +1,7 @@
 <template>
     <nav class="drop-down-menu">
         <a href="#about">WHO I AM</a>
-        <a href="#projects-view">WHAT I DO</a>
+        <a href="#projects">WHAT I DO</a>
         <a href="#contact">HOW TO FIND ME</a>
     </nav>
 </template>
@@ -21,17 +21,17 @@ export default {
             font-size: 1.2rem;
             line-height: 4rem;
 
-            &:hover{
+            &:active{
                 color: $primary-pink;
             }
 
             &:nth-of-type(2){
-                &:hover{
+                &:active{
                     color: $primary-green;
                 }
             }
             &:nth-of-type(3){
-                &:hover{
+                &:active{
                     color: $primary-red;
                 }
             }

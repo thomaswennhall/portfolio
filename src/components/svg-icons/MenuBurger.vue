@@ -24,7 +24,7 @@ export default {};
 svg{
     fill: black;
 
-    &:hover{
+    &:active{
         fill: $primary-red;
     }
 }

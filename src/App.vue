@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Home class="view view--home" />
+    <NavBar class="nav-bar"/>
     <About class="view view--about" />
     <Projects class="view view--projects" />
     <Contact class="view view--contact" />
@@ -12,9 +13,10 @@ import About from "@/views/About.vue";
 import Home from "@/views/Home.vue";
 import Projects from "@/views/Projects.vue";
 import Contact from "@/views/Contact.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
-  components: { About, Home, Projects, Contact },
+  components: { About, Home, Projects, Contact, NavBar },
 };
 </script>
 
@@ -56,16 +58,29 @@ button{
   border: none;
 }
 
+.nav-bar{
+  position: fixed;
+  top: 0;
+  display: none;
+  height: 10vh;
+}
+
 .view{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(12, 1fr);
 
-  min-height: 100vh;
   padding: 2rem;
+  @media screen and (min-width: 650px) {
+    padding: 4rem;
+  }
+
+  &--about, &--projects{
+      min-height: 100vh;
+  }
 
   &--home, &--contact{
-    max-height: 100vh;
+    height: 100vh;
   }
 }
 </style>

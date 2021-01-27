@@ -57,10 +57,18 @@ export default {
     &-github {
       grid-column: 1;
       grid-row: 3;
+      
+      @media screen and (min-width: 650px) {
+        grid-column: 2;
+        justify-self: right;
+      }
     }
     &-linkedin {
       grid-column: 2;
       grid-row: 5;
+       @media screen and (min-width: 650px) {
+        grid-column: 3;
+      }
     }
     &-mail {
       grid-column: 4;
@@ -75,6 +83,10 @@ export default {
   p {
     grid-column: span 5;
     grid-row: 7 / span 5;
+    @media screen and (min-width: 650px) {
+      grid-column: 2 / span 3;
+      padding: 0 3rem 0 3rem;
+    }
   }
 }
 </style>
