@@ -54,15 +54,11 @@ export default {
     }
   }
 
-  .heading{
-    margin-bottom: 1rem;
-  }
-
   p {
     text-transform: none;
     margin-top: 1rem;
-    &:first-of-type {
-      margin: 0;
+    &:last-of-type{
+      margin-bottom: 2rem;
     }
   }
 }

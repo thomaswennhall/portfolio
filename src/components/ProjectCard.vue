@@ -25,6 +25,7 @@ export default {
 
         h2{
             font-size: 1.6rem;
+            margin-bottom: 0.3rem;
         }
 
         p{
@@ -35,25 +36,26 @@ export default {
             display: flex;
             justify-content: start;
             width: 100%;
-            margin: 0.6rem 0;
+            margin: 0.6rem 0; 
             
             a{
                 letter-spacing: 0.2rem;
                 font-size: 1rem;
-                padding: 0.2rem 0.6rem;
+                text-decoration: underline;
                 
+                /* padding: 0.2rem 0.6rem;
                 border: 0.16rem solid black;
                 border-radius: 0.3rem;
             
-                background-color: $primary-pink;
-                
+                background-color: $primary-pink; */
+
                 &:first-of-type{
-                    background-color: $primary-yellow;
+                    /* background-color: $primary-yellow; */
                     margin-right: 5%;
-                }
+                }/* 
                 &:active{
                     background-color: transparent;
-                }
+                } */
             }
         }
 

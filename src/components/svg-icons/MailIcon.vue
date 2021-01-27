@@ -1,7 +1,7 @@
 <template>
   <svg
-    width="65"
-    height="65"
+    width="55"
+    height="55"
     viewBox="0 0 16 16"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -14,13 +14,13 @@
 
 <style lang="scss" scoped>
     svg {
-        fill: black;
+      fill: black;
 
-        &:hover {
-            fill: $primary-yellow;
-        }
-        &:active{
-            fill:black;
-        }
+      &:hover {
+          fill: $primary-yellow;
+      }
+      &:active{
+          fill:black;
+      }
     }
 </style>

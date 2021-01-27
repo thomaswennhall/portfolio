@@ -3,8 +3,8 @@
     <div>
       <h1 class="heading">What I do</h1>
       <p class="projects-text">
-        (Here is a collection of projects I have done. Some are assignments from
-        school and some are projects I have created in my spare time.)
+        Here is a collection of projects I have done. Some are assignments from
+        school and some are projects I have created in my spare time.
       </p>
     </div>
     <ProjectCard
@@ -94,8 +94,7 @@ export default {
   }
 
   .projects-text {
-    font-size: 0.8rem;
-
+    font-size: 0.9rem;
     letter-spacing: 0.2rem;
     line-height: 1.2rem;
   }

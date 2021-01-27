@@ -68,18 +68,18 @@ button{
 .view{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(11, 1fr);
 
   padding: 2rem;
   @media screen and (min-width: 650px) {
     padding: 4rem;
   }
 
-  &--about, &--projects{
-      min-height: 100vh;
+  &--about, &--projects, &--contact{
+    min-height: 100vh;
   }
 
-  &--home, &--contact{
+  &--home{
     height: 100vh;
   }
 }
