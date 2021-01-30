@@ -45,35 +45,32 @@ export default {
   background-color: $primary-red;
   
   .heading {
-    grid-column: span 6;
+    grid-column: span 12;
     overflow: auto;
-  }
-
-  .icon {
-    width: 4rem;
   }
 
   .link {
 
     &-github {
-      grid-column: 1;
+      grid-column: 3;
       grid-row: 3;
       
       @media screen and (min-width: 650px) {
-        grid-column: 2;
+        grid-column: 5;
         justify-self: right;
       }
     }
     &-linkedin {
-      grid-column: 2;
-      grid-row: 5;
+      grid-column: 5;
+      grid-row: 4;
+      justify-self: right;
        @media screen and (min-width: 650px) {
-        grid-column: 3;
+        grid-column: 6;
       }
     }
     &-mail {
-      grid-column: 4;
-      grid-row: 4;
+      grid-column: 8;
+      grid-row: 3;
     }
 
     &:active{
@@ -82,11 +79,10 @@ export default {
   }
 
   p {
-    grid-column: span 5;
-    grid-row: 7 / span 4;
+    grid-column: span 12;
+    grid-row: 6 / span 4;
     @media screen and (min-width: 650px) {
-      grid-column: 2 / span 3;
-      padding: 0 3rem 0 3rem;
+      grid-column: 5 / span 4;
     }
   }
 }

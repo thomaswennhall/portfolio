@@ -24,7 +24,7 @@ export default {
         margin-top: 1.6rem;
 
         h2{
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             margin-bottom: 0.3rem;
         }
 
@@ -36,13 +36,18 @@ export default {
             display: flex;
             justify-content: start;
             width: 100%;
-            margin: 0.6rem 0; 
+            margin: 0.6rem 0;
             
             a{
                 letter-spacing: 0.2rem;
                 font-size: 1rem;
                 text-decoration: underline;
                 
+                @media screen and (min-width: 650px){
+                    &:hover{
+                        color: $primary-yellow;
+                    }
+                }
                 /* padding: 0.2rem 0.6rem;
                 border: 0.16rem solid black;
                 border-radius: 0.3rem;
@@ -52,10 +57,10 @@ export default {
                 &:first-of-type{
                     /* background-color: $primary-yellow; */
                     margin-right: 5%;
-                }/* 
+                }
                 &:active{
-                    background-color: transparent;
-                } */
+                    color: transparent;
+                }
             }
         }
 

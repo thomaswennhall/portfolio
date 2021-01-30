@@ -1,12 +1,10 @@
 <template>
   <section id="projects">
-    <div>
       <h1 class="heading">What I do</h1>
-      <p class="projects-text">
+     <!--  <p class="projects-text">
         Here is a collection of projects I have done. Some are assignments from
         school and some are projects I have created in my spare time.
-      </p>
-    </div>
+      </p> -->
     <ProjectCard
       class="project-card"
       v-for="project in firstThree"
@@ -69,29 +67,6 @@ export default {
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 650px) {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-
-    .project-card{
-        grid-column: 2;
-    }
-    .rest-of-projects {
-      grid-row: 1 / span 2;
-      grid-column: 3;
-    } 
-
-    .projects-text{
-        width: 80%;
-    }
-
-    .show-all{
-        width: 50%;
-        height: 50%;
-        place-self: center;
-    }
-  }
 
   .projects-text {
     font-size: 0.9rem;
@@ -107,6 +82,42 @@ export default {
 
     &:hover {
       background-color: $primary-red;
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2rem;
+
+    .project-card{
+      &:first-of-type{
+        grid-column: 5 / span 3;
+        grid-row: 3 / span 3;
+      }
+      &:nth-of-type(2){
+        grid-column: 8 / span 3;
+        grid-row: 3 / span 3;
+      }
+    }
+    .rest-of-projects {
+      grid-row: 1 / span 3;
+      grid-column: 3 / span 3;
+    }
+
+    .heading{
+      grid-column: span 3;
+    }
+    .projects-text{
+      grid-column: span 3;
+      grid-row: 2;
+    }
+
+    .show-all{
+      width: 50%;
+      height: 50%;
+      place-self: center;
     }
   }
 }

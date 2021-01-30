@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Home class="view view--home" />
-    <NavBar class="nav-bar"/>
+    <NavBar class="nav-bar" :class="{sticky: sticky}"/>
     <About class="view view--about" />
     <Projects class="view view--projects" />
     <Contact class="view view--contact" />
@@ -17,6 +17,28 @@ import NavBar from "@/components/NavBar.vue";
 
 export default {
   components: { About, Home, Projects, Contact, NavBar },
+
+  data(){ return {
+    sticky: false
+  }},
+
+  mounted() {
+    window.document.onscroll = () => {
+     const navBar = document.querySelector('.nav-bar')
+     let navPosition = navBar.offsetTop
+
+     if(window.scrollY > navPosition){
+       this.sticky = true
+        if(window.scrollY < window.innerHeight - navBar.offsetHeight - 32){
+          this.sticky = false
+        }
+       }else{
+          this.sticky = false
+        } 
+    }
+  
+  }
+  
 };
 </script>
 
@@ -49,7 +71,7 @@ a{
   color: black;
 }
 p{
-  line-height: 1.4rem;
+  line-height: 1.3rem;
 }
 
 button{
@@ -59,16 +81,23 @@ button{
 }
 
 .nav-bar{
-  position: fixed;
-  top: 0;
-  display: none;
-  height: 10vh;
+  position: absolute;
+  bottom: 32px;
+  z-index: 10;
+  left: 4rem;
+  padding-top: 4rem;
+
+  &.sticky{
+    position: fixed;
+    top: 0;
+    bottom: auto;
+  }
 }
 
 .view{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 1fr);
 
   padding: 2rem;
   @media screen and (min-width: 650px) {

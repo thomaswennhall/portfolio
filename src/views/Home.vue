@@ -52,7 +52,7 @@ export default {
 }
 
 .name {
-  grid-column: span 3;
+  grid-column: span 8;
   grid-row: 5 / span 3;
 
   font-size: 2.3rem;
@@ -60,7 +60,7 @@ export default {
 }
 
 .menu-icon {
-  grid-column: 5;
+  grid-column: 12;
   grid-row: 1;
   width: 3rem;
 
@@ -68,7 +68,7 @@ export default {
 }
 
 .drop-down {
-  grid-column: 3 / span 3;
+  grid-column: 6 / span 7;
   grid-row: span 4;
 
   display: none;
