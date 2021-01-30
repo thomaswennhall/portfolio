@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-      <h1 class="heading">What I do</h1>
+      <h1 class="section-heading">What I do</h1>
      <!--  <p class="projects-text">
         Here is a collection of projects I have done. Some are assignments from
         school and some are projects I have created in my spare time.
@@ -106,7 +106,7 @@ export default {
       grid-column: 3 / span 3;
     }
 
-    .heading{
+    .section-heading{
       grid-column: span 3;
     }
     .projects-text{

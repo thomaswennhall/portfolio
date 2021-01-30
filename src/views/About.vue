@@ -1,6 +1,6 @@
 <template>
   <section id="about">
-    <h1 class="heading">Who I am</h1>
+    <h1 class="section-heading">Who I am</h1>
       <article class="article article-first">
         <p>
           My name is Thomas, I grew up in V&auml;ster&aring;s where I spent most
@@ -47,8 +47,8 @@ export default {
   display: flex;
   flex-direction: column;
 
-  .heading{
-      grid-column: span 2;
+  .section-heading{
+    grid-column: span 2;
   }
 
   p {
@@ -72,7 +72,7 @@ export default {
     grid-template-rows: repeat(12, 1fr);
     gap: 0.2rem;
 
-    .heading{
+    .section-heading{
       grid-column: span 2;
     }
     .article {

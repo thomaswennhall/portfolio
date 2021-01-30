@@ -1,19 +1,19 @@
 <template>
   <nav id="nav">
     <a 
-      @click="toggleAbout" 
+      class="link-about"
       :class="{ active: active.about }" 
       href="#about"
       >WHO I AM</a
     >
     <a
-      @click="toggleProjects"
+      class="link-projects"
       :class="{ active: active.projects }"
       href="#projects"
       >WHAT I DO</a
     >
     <a
-      @click="toggleContact"
+      class="link-contact"
       :class="{ active: active.contact }"
       href="#contact"
       >HOW TO FIND ME</a
@@ -23,32 +23,8 @@
 
 <script>
 export default {
-  data() {
-    return {
-      active: {
-        about: false,
-        projects: false,
-        contact: false
-      }
-    };
-  },
-
-  methods: {
-    toggleAbout() {
-      this.active.about = true;
-      this.active.projects = false;
-      this.active.contact = false;
-    },
-    toggleProjects() {
-      this.active.about = false;
-      this.active.projects = true;
-      this.active.contact = false;
-    },
-    toggleContact() {
-      this.active.about = false;
-      this.active.projects = false;
-      this.active.contact = true;
-    }
+  props: {
+    active: Object
   }
 };
 </script>
@@ -60,11 +36,26 @@ nav {
   justify-content: space-between;
   align-items: start;
 
+  @media screen and (max-width: 650px) {
+    display: none;
+  }
+
   a {
     margin-bottom: 2rem;
-
-    &:hover {
-      color: $primary-pink;
+    &.link-about{
+      &:hover {
+        color: $primary-pink;
+      }
+    }
+    &.link-projects{
+      &:hover {
+        color: $primary-green;
+      }
+    }
+    &.link-contact{
+      &:hover {
+        color: $primary-red;
+      }
     }
     &.active {
       font-size: 2rem;

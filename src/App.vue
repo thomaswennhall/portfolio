@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <Home class="view view--home" />
-    <NavBar class="nav-bar" :class="{sticky: sticky}"/>
+    <NavBar 
+      class="nav-bar" 
+      :class="{sticky: sticky}"
+      :active="active"
+    />
     <About class="view view--about" />
     <Projects class="view view--projects" />
     <Contact class="view view--contact" />
@@ -19,18 +23,43 @@ export default {
   components: { About, Home, Projects, Contact, NavBar },
 
   data(){ return {
-    sticky: false
+    sticky: false,
+    active: {
+        about: false,
+        projects: false,
+        contact: false
+      }
   }},
 
   mounted() {
     window.document.onscroll = () => {
      const navBar = document.querySelector('.nav-bar')
      let navPosition = navBar.offsetTop
+     const aboutTop = document.querySelector('#about').getBoundingClientRect().top
+     const projectsTop = document.querySelector('#projects').getBoundingClientRect().top
+     const contactTop = document.querySelector('#contact').getBoundingClientRect().top
 
      if(window.scrollY > navPosition){
        this.sticky = true
+       if(aboutTop <= 0){
+         this.active.about = true
+          if(projectsTop <= 1){
+            this.active.about = false
+            this.active.projects = true
+            if(contactTop <= 1){
+              this.active.about = false
+              this.active.projects = false
+              this.active.contact = true
+            } else{
+              this.active.contact = false
+            }
+          }else{
+            this.active.projects = false
+          }
+        }
         if(window.scrollY < window.innerHeight - navBar.offsetHeight - 32){
           this.sticky = false
+          this.active.about = false
         }
        }else{
           this.sticky = false
@@ -102,6 +131,9 @@ button{
   padding: 2rem;
   @media screen and (min-width: 650px) {
     padding: 4rem;
+    .section-heading{
+      display: none;
+    }
   }
 
   &--about, &--projects, &--contact{
@@ -111,5 +143,7 @@ button{
   &--home{
     height: 100vh;
   }
+
+
 }
 </style>

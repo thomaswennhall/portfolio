@@ -1,6 +1,6 @@
 <template>
   <section id="contact">
-    <h1 class="heading">How to find me</h1>
+    <h1 class="section-heading">How to find me</h1>
     <a 
       class="link-github" 
       href="https://github.com/thomaswennhall"
@@ -44,7 +44,7 @@ export default {
 #contact {
   background-color: $primary-red;
   
-  .heading {
+  .section-heading {
     grid-column: span 12;
     overflow: auto;
   }
