@@ -21,7 +21,8 @@ export default {
         display: flex;
         flex-direction: column;
 
-        margin-top: 1.6rem;
+        max-width: 20rem;
+        margin-bottom: 1rem;
 
         h2{
             font-size: 1.5rem;
@@ -48,14 +49,8 @@ export default {
                         color: $primary-yellow;
                     }
                 }
-                /* padding: 0.2rem 0.6rem;
-                border: 0.16rem solid black;
-                border-radius: 0.3rem;
-            
-                background-color: $primary-pink; */
 
                 &:first-of-type{
-                    /* background-color: $primary-yellow; */
                     margin-right: 5%;
                 }
                 &:active{
